@@ -1,0 +1,15 @@
+
+
+<div  class="users-list">
+        <div *ngFor="let item of users" class="users-list-item">
+            {{$any(item).name}}
+            {{$any(item).email}}
+            {{$any(item).id}}
+            {{$any(item).address.city}}
+            <button (click)="deleteUser(item.id)">Удалить юзера</button>
+        </div>
+        
+        </div>
+
+
+        
